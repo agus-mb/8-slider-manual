@@ -1,1 +1,30 @@
 @use 'reset';
+@use 'img';
+
+.container {
+  width: 400px;
+  background-color: blue;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+display: flex;
+
+    .slide {
+      width: calc(100% / 3);
+      height: 100%;
+    }
+  
+
+  .left,
+  .right {
+    position: absolute;
+    top: 30px;
+    font-size: 1.5rem;
+    padding: 5px;
+    font-weight: 600;
+    transform: translate(0, -50);
+    transition: 0.5s ease;
+
+    background-color: red;
+  }
+}
