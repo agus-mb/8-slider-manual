@@ -23,7 +23,6 @@ body {
   background-color: blue;
   height: 400px;
   position: relative;
-  overflow: hidden;
   display: flex;
 }
 .container-carrusel .carruseles {
