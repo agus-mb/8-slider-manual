@@ -1,72 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
 }
 
-.container{
-    width: 90%;
-    min-height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
+.container {
+  width: 90%;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.slider{
-    background-color: grey;
-    padding: 0;
+.slider {
+  background-color: grey;
+  padding: 0;
 }
 
-.slider-container{
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    align-items: center;
-    gap: 1em;
+.slider-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 1em;
 }
 
-.slider-body{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none; /*hace que el elemento no sea reconocido ante los clicks*/
-    display: grid;
-    background-color: white;
-    grid-template-columns: 1fr max-content;
-    align-items: center;
-    transition: opacity 1.5s;
+.slider-body {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  opacity: 0;
+  pointer-events: none; /*hace que el elemento no sea reconocido ante los clicks*/
+  display: grid;
+  background-color: white;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  transition: opacity 1.5s;
 }
 
-.slider-body--show{
-    opacity: 1;
-    pointer-events: unset; /*hace que sea reconocido por sobre los otros*/
-
+.slider-body--show {
+  opacity: 1;
+  pointer-events: unset; /*hace que sea reconocido por sobre los otros*/
 }
 
-.slider-img{
-    width: 420px;
-    height: 420px;
-    object-fit: cover; /*imagen no se distorciona*/
-   display: block;
-   margin: 0 auto;
+.slider-img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover; /*imagen no se distorciona*/
+  display: block;
+  margin: 0 auto;
 }
 
-.slider-texts{
-    max-width: 600px;
-    margin: auto;
+.slider-texts {
+  max-width: 600px;
+  margin: auto;
 }
 
-.subtitle{
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.slider-review{
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.7;
+.slider-review {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
-.slider-arrow{
-    cursor: pointer;
+.slider-arrow {
+  cursor: pointer;
 }
